@@ -36,14 +36,37 @@ Query: [2_cohort_analysis.sql](https://github.com/vlntnmazurenko/Intermediate_SQ
 
 Visualization:  
 
-<img width="1693" height="929" alt="a7f83b89-8b0d-4560-8387-a24e3ab2368e" src="https://github.com/user-attachments/assets/7442e659-39ef-400a-9d04-e25231c24868" />  
-### Key Findings 
+<img width="1693" height="929" alt="a7f83b89-8b0d-4560-8387-a24e3ab2368e" src="https://github.com/user-attachments/assets/7442e659-39ef-400a-9d04-e25231c24868" />
+
+### Key Findings
 - Revenue generally increased alongside customer acquisition from 2015 to 2019, with both metrics peaking before a noticeable decline in 2020.
 - The 2022 cohort achieved the highest customer acquisition (9,010 customers) while generating the second-highest total revenue ($21.5M), indicating strong acquisition performance.
 - The 2024 cohort shows substantially lower revenue and customer counts than previous years, likely because it represents a more recent cohort with limited time to generate lifetime revenue.
 ### Business Insights
 - Replicate the acquisition strategies used in 2018–2022, as these cohorts consistently delivered both high customer volumes and strong revenue.
-- Investigate the sharp decline in the 2020 cohort to determine whether external factors, market conditions, or operational changes affected customer acquisition and spending.
-- Continue monitoring recent cohorts (2023–2024) before drawing long-term conclusions, as their lifetime value is still developing and may increase over time.
+- Examined purchasing recency to better understand customer engagement.
+- Calculated key customer-level metrics to support retention and re-engagement strategies.
 
 ### 3. Customer Retention
+- Identified customers who may be at risk of churning based on the time since their last purchase.
+- Examined purchasing recency to better understand customer engagement.
+- Calculated key customer-level metrics to support retention and re-engagement strategies.  
+
+Query: [3_retention_analysis.sql](https://github.com/vlntnmazurenko/Intermediate_SQL_Sales_Analysis/blob/main/3_retention_analysis.sql)  
+
+Visualization: 
+
+<img width="1692" height="930" alt="189aa4b2-4a0b-4f16-bd02-639e4f9538ff" src="https://github.com/user-attachments/assets/2f619d1c-9c46-4886-bd35-61eda3bb61dc" />  
+
+### Key Findings
+- Customer churn remains consistently high across all cohorts, with approximately 90–92% of customers classified as churned, while only 8–10% remain active.
+- The 2022 cohort has the highest number of active customers (937), reflecting its larger customer base, but it also records the highest number of churned customers (8,073).
+- The active customer share is remarkably stable over time, suggesting that retention performance has changed very little across cohorts despite fluctuations in customer acquisition.
+### Business Insights
+- Improving customer retention should be a strategic priority, as even a small reduction in churn could significantly increase the number of active customers and overall lifetime value.
+- Analyze the characteristics of retained customers to identify behaviors or segments associated with long-term engagement and replicate them across the broader customer base.
+- Implement targeted retention initiatives early in the customer lifecycle, such as onboarding improvements, personalized communication, and loyalty programs, to reduce churn before customers disengage.
+### Technical Details
+- Database: PostgreSQL
+- Analysis Tools: PostgreSQL, Visual Studio Code, PGadmin
+- Visualization: ChatGPT
